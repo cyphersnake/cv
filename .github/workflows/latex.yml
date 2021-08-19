@@ -10,4 +10,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
+          extra_system_packages: "ttf-font-awesome"
+          pre_compile: "tlmgr update --self && tlmgr update --all && tlmgr install fontawesome && tlmgr install raleway"
           latexmk_use_xelatex: true
