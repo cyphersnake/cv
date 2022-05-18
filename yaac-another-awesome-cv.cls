@@ -88,7 +88,7 @@
 
 \DeclareUnicodeCharacter{00E9}{\'{e}}
 % Define default accent colors
-\definecolor{basecolor}{HTML}{000066}       %BLUE
+\definecolor{basecolor}{HTML}{42170F}       %BLUE
 
 \ifundef{\@green} {
   \ifundef{\@red} {
@@ -193,6 +193,7 @@
 \newcommand{\locationSymbol}{\faMapMarker*}
 \newcommand{\infoSymbol}{\faInfo}
 \newcommand{\linkedinSymbol}{\faLinkedinIn}
+\newcommand{\telegramSymbol}{\faPaperPlane}
 \newcommand{\viadeoSymbol}{\faViadeo}
 \newcommand{\mobileSymbol}{\faMobile*}
 \newcommand{\githubSymbol}{\faGithub}
@@ -255,6 +256,10 @@
 % Render author's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
 \newcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{http://www.linkedin.com/in/#1/fr}{linkedin.com/in/#1}}
+
+% Render author's telegram
+% Usage: \telegram{<telegram-nick>}
+\newcommand*{\telegram}[1]{\sociallink{\telegramSymbol}{https://t.me/#1}{t.me/#1}}
 
 % Render author's viadeo(optional)
 % Usage: \viadeo{<viadeo-nick>}
